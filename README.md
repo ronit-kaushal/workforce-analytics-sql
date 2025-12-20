@@ -36,7 +36,7 @@ Each script is designed to be executed sequentially to fully recreate the datase
 
 ---
 
-**## Synthetic Data Generation**
+** Synthetic Data Generation**
 Data is generated using PostgreSQL features such as:
 - generate_series
 - random()
