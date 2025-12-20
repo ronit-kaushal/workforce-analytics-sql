@@ -2,7 +2,7 @@
 
 ## Overview
 This project demonstrates an end-to-end **Workforce Analytics data model and analysis** built using **PostgreSQL**.  
-It simulates a real-world recruitment lifecycle — from job creation to hiring — using **synthetic but realistic data**.
+It simulates a real-world recruitment lifecycle - from job creation to hiring - using **synthetic but realistic data**.
 
 The focus of this project is on:
 - Data modeling
