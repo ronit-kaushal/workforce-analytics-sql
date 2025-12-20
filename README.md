@@ -1,4 +1,4 @@
-# 📊 Workforce Analytics — SQL Project (PostgreSQL)
+# Workforce Analytics — SQL Project (PostgreSQL)
 
 ## Overview
 This project demonstrates an end-to-end **Workforce Analytics data model and analysis** built using **PostgreSQL**.  
