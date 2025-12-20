@@ -14,12 +14,12 @@ The focus of this project is on:
 ## Dataset & Schema
 The database models a typical staffing workflow using the following tables:
 
-- **clients** — client companies and industries  
-- **jobs** — job openings created by clients  
-- **candidates** — candidate profiles and sourcing channels  
-- **applications** — job applications with final stage status  
-- **stage_events** — stage-level timeline (submission → hire)  
-- **offers** — offer details and acceptance status  
+- **clients** - client companies and industries  
+- **jobs** - job openings created by clients  
+- **candidates** - candidate profiles and sourcing channels  
+- **applications** - job applications with final stage status  
+- **stage_events** - stage-level timeline (submission → hire)  
+- **offers** - offer details and acceptance status  
 
 All data is **synthetically generated** using PostgreSQL functions (`generate_series`, `random`) while preserving realistic business logic and constraints.
 
@@ -34,3 +34,16 @@ All data is **synthetically generated** using PostgreSQL functions (`generate_se
 04_operations_analysis.sql-- Business & operational insights
 
 Each script is designed to be executed sequentially to fully recreate the dataset and analysis.
+
+---
+
+**## Synthetic Data Generation**
+Data is generated using PostgreSQL features such as:
+- generate_series
+- random()
+- Conditional logic for realistic funnel progression
+The data generation logic ensures:
+- Logical stage progression (e.g., Interview cannot occur without Shortlist)
+- Realistic drop-offs across funnel stages
+- Offers exist only for valid application stages
+- All hired candidates have accepted offers
