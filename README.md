@@ -87,7 +87,8 @@ Build an end-to-end **workforce analytics data model and SQL analysis layer** to
 01_table_creation.sql        --  Schema definition
 02_data_insertion.sql        --  Synthetic data generation
 03_data_validation.sql       --  Data quality & integrity checks
-04_operations_analysis.sql   --  Business & operational insights```
+04_operations_analysis.sql   --  Business & operational insights
+```
 
 ---
 
